@@ -1,3 +1,25 @@
-h1 {
-    font-size: 3rem;
+body {
+    font-family: 'Open Sans', sans-serif;
+    // font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.heading-primary {
+    margin-bottom: 3rem;
+    & > * {
+        display: block;
+        font-weight: 400;
+    }
+
+    &--main {
+        font-size: 9rem;
+        text-transform: uppercase;
+        letter-spacing: 2rem;
+    }
+    &--sub {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2rem;
+    }
 }

@@ -17,7 +17,12 @@ const config = {
         rules: [
             {
                 test: /\.(s(a|c)ss)$/,
-                use: ["css-loader", "sass-loader"]
+                use: [{
+                    loader: 'css-loader',
+                    options: {
+                        url: false
+                    }
+                }, "sass-loader"]
             }
         ]
     }

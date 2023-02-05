@@ -1,0 +1,13 @@
+.btn {
+    display: inline-block;
+    padding: 2rem 3rem;
+    border-radius: 100px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn--white {
+    background-color: $color-white;
+    color: $color-primary-dark;
+}
