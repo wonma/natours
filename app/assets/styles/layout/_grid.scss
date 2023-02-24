@@ -1,0 +1,62 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+    margin-bottom: $grid-gutter-vertical;
+    
+    @include clearfix;
+}
+
+// 2 COLUMS
+
+.col-1-of-2 {
+    float: left;
+    border: 1px solid olive;
+    width: calc((100% - #{$grid-gutter-hozirontal}) / 2);
+}
+
+.col-1-of-2:not(:last-child) {
+    margin-right: $grid-gutter-hozirontal;
+}
+
+// 3 COLUMS
+.col-1-of-3 {
+    float: left;
+    border: 1px solid olive;
+    width: calc((100% - #{$grid-gutter-hozirontal}) / 3);
+}
+
+.col-2-of-3 {
+    float: left;
+    border: 1px solid olive;
+    width: calc(((100% - #{$grid-gutter-hozirontal}) / 3) * 2);
+}
+
+// 4 COLUMS
+.col-1-of-4 {
+    float: left;
+    border: 1px solid olive;
+    width: calc((100% - #{$grid-gutter-hozirontal}) / 4);
+}
+
+.col-2-of-4 {
+    float: left;
+    border: 1px solid olive;
+    width: calc(((100% - #{$grid-gutter-hozirontal}) / 4) * 2);
+}
+
+.col-3-of-4 {
+    float: left;
+    border: 1px solid olive;
+    width: calc(((100% - #{$grid-gutter-hozirontal}) / 4) * 3);
+}
+
+// GUTTER HORIZONTAL
+// div[class|="col"]:not(:last-child) {
+//     margin-right: $grid-gutter-hozirontal;
+
+// } 이것은 두 케이스를 다루기 때문에 쓰지 않는 것이 나음. col도 잡고 col-xxxxx도 잡음. 
+
+div[class^="col-"]:not(:last-child) {
+    margin-right: $grid-gutter-hozirontal;
+}
+
