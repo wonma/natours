@@ -1,0 +1,25 @@
+.card {
+    background-color: rgba($color: #ffffff, $alpha: .9);
+    border-radius: 3px;
+    padding: 3rem;
+    text-align: center;
+
+    &__icon {
+        font-size: 6rem;
+        font-weight: 500;
+        background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: $color-grey-dark-2;
+    }
+}

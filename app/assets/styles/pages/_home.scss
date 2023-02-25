@@ -1,0 +1,28 @@
+.section {
+    padding: 20rem 0;
+
+    &--about {
+        margin-top: -10rem;
+        margin-bottom: -10rem;
+    }
+
+    &--features {
+        background: 
+            linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
+            url('./assets/images/nat-1-large.jpg');
+
+        background-size: cover;
+        background-position: center;
+        transform: skewY(-7deg);
+
+        & > * {
+            transform: skewY(7deg);
+            margin-bottom: 0;
+        }
+    }
+
+    &--tours {
+        background-color: $color-grey-light-1;
+    }
+}
+
