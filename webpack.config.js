@@ -33,6 +33,10 @@ class RunAfterCompile { // build에서만 적용. 'images들을 퍼블릭용 폴
       compiler.hooks.done.tap('Copy images', () => {
         fse.copySync('./app/assets/images', './docs/assets/images');
       });
+
+      compiler.hooks.done.tap('Copy font folder', () => {
+        fse.copySync('./app/assets/fonts', './docs/assets/fonts');
+      });
     }
   }
 
