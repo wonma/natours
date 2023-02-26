@@ -1,0 +1,68 @@
+.review {
+    background-color: rgba(#ffffff, 0.8);
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    width: 50%;
+    margin: 0 auto;
+    padding: 6rem;
+    margin-bottom: 5rem;
+    transform: skewX(-12deg);
+    border-radius: 3px;
+
+    &:hover &__img {
+        transform: translateX(-23%) translateY(-10%) scale(1);
+        filter: blur(.5rem) brightness(80%);
+    }
+
+    &:hover &__caption {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    @include clearfix;
+
+    &__img-wrapper {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        overflow: hidden;
+        float: left;
+        transform: translateX(-1rem) skewX(12deg);
+
+        shape-outside: circle(34% at 40% 44%);
+        -webkit-shape-outside: circle(34% at 40% 44%);
+        clip-path: circle(39%);
+        -webkit-clip-path: circle(39%);
+    }
+
+    &__img {
+        display: block;
+        width: 200%;
+        transition: all .2s ease-out;
+        transform: translateX(-23%) translateY(-10%) scale(1.2);
+        backface-visibility: hidden;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        transition: all .3s ease-out;
+        color: #ffffff;
+        font-size: 1.8rem;
+        opacity: 0;
+    }
+
+    & h3 {
+        margin-bottom: 1rem;
+        transform: skewX(12deg);
+
+    }
+
+    & p {
+        font-size: 1.8rem;
+        color: $color-grey-dark-2;
+        transform: skewX(12deg);
+
+    }
+}
