@@ -31,5 +31,10 @@
         height: auto;
         overflow: hidden;
     }
+
+    &--form {
+        background: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+        box-shadow: $box-shadow-light;
+    }
 }
 

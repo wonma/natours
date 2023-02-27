@@ -1,0 +1,13 @@
+.primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    z-index: 2;
+    background: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+}
+
+.hamburger__checkbox:checked {
+    width: 100vw;
+}

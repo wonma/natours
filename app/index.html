@@ -210,6 +210,78 @@
                 <a href="#" class="btn-text">Read All Stories &rarr;</a>
             </div>
         </section>
+        <section class="section section--form">
+            <div class="trapezoid">
+                <form class="form">
+                    <h2 class="heading-secondary u-margin-bottom--m">Start Booking Now</h2>
+                    <div class="form__group form__group--text">
+                        <input type="text" id="full-name" class="form__input--text" placeholder="Full name" name="full-name" minlength="2" maxlength="15"/>
+                        <label for="full-name" class="form__label form__label--text">Full Name</label>
+                    </div>
+                    <div class="form__group form__group--text">
+                        <input type="email" id="email" class="form__input--text" name="email" placeholder="Email address"/>
+                        <label for="email" class="form__label form__label--text">Email address</label>
+                    </div>
+                    <div class="form__group form__group--radio">
+                        <input type="radio" id="s-tour-group" class="form__input--radio" name="group-type"/>
+                        <label for="s-tour-group" class="form__label form__label--radio">Small tour group</label>
+                        <input type="radio" id="l-tour-group" class="form__input--radio" name="group-type"/>
+                        <label for="l-tour-group" class="form__label form__label--radio">Large tour group</label>
+                    </div>
+                    <button class="btn btn--green" type="submit">Next Step &rarr;</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <figure class="footer__logo-box">
+                <piture class="footer__logo">
+                    <img src="./assets/images/logo-green-1x.png" alt="Natours Logo" class="footer__logo-img">
+                </piture>
+            </figure>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Company</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact Us</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Careers</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="hamburger">
+            <input id="hamburger__checkbox" type="checkbox" class="hamburger__checkbox" />
+            <label for="hamburger__checkbox" class="hamburger__icon-box">
+                <span class="hamburger__label">Primary Nav</span>
+                <span class="hamburger__icon">
+                    <span  class="hamburger__icon--center"></span>
+                </span>
+            </label>
+        </div>
+        
+        <div class="primary-nav">
+            <nav class="primary-nav__menu">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item">
+                        <a href="#" class="primary-nav__link">01 About Natours</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#" class="primary-nav__link">02 Your Benefits</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#" class="primary-nav__link">03 Popular Tours</a>
+                    </li>                
+                </ul>
+            </nav>
+        </div>
     </main>
 </body>
 </html>
