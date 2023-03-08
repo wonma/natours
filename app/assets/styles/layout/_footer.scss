@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 2rem 5rem 2rem;
     color: $color-white;
     font-size: 1.6rem;
 
@@ -28,12 +28,20 @@
         float: left;
         padding-top: 2rem;
         border-top: 1px solid $color-grey-dark-1;
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__nav-list {
         list-style: none;
 
         @include clearfix;
+
+        @include respond(tab-port) {
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
 
     &__nav-item {
@@ -55,5 +63,9 @@
         width: 80%;
         border-top: 1px solid $color-grey-dark-1;
         padding-top: 2rem;
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
 }

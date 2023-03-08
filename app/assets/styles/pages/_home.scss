@@ -1,9 +1,13 @@
 .section {
-    padding: 20rem 0;
+    padding: 17rem 0;
+
+    @include respond(tab-land) {
+        padding: 20rem 6rem;
+    }
 
     &--about {
-        margin-top: -10rem;
-        margin-bottom: -10rem;
+        margin-top: -6rem;
+        padding-bottom: 10rem;
     }
 
     &--features {
@@ -23,6 +27,16 @@
 
     &--tours {
         background-color: $color-grey-light-1;
+        margin-top: -11rem;
+        padding-top: 24rem;
+
+        @include respond(tab-land) {
+            margin-top: -9rem;
+        }
+        @include respond(big-desktop) {
+            margin-top: -12rem;
+            padding-top: 24rem;
+        }
     }
 
     &--reviews {
@@ -36,5 +50,7 @@
         background: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
         box-shadow: $box-shadow-light;
     }
+
+
 }
 

@@ -47,10 +47,22 @@
 // GUTTER HORIZONTAL
 // div[class|="col"]:not(:last-child) {
 //     margin-right: $grid-gutter-hozirontal;
-
+  
 // } 이것은 두 케이스를 다루기 때문에 쓰지 않는 것이 나음. col도 잡고 col-xxxxx도 잡음. 
 
-div[class^="col-"]:not(:last-child) {
-    margin-right: $grid-gutter-hozirontal;
+div[class^="col-"] {
+
+    &:not(:last-child) {
+        margin-right: $grid-gutter-hozirontal;
+
+        @include respond(tab-port) {
+            margin-right: 0;
+            margin-bottom: 5rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
 }
 

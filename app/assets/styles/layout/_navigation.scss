@@ -12,6 +12,11 @@
         height: 6.5rem;
         top: 6rem;
         right: 6rem;
+        
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__button {
@@ -25,6 +30,7 @@
         z-index: 1050;
         text-align: center;
         cursor: pointer;
+        box-shadow: 0 1.5rem 4rem rgba(#000000, .15);
     }
 
     &__icon {
@@ -102,14 +108,15 @@
         font-size: 4rem;
         font-weight: 300;
         letter-spacing: .4rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 2rem;
+        }
     }
 
     &__list {
         list-style: none;
-    }
-
-    &__item {
-
     }
 
     &__link {
@@ -124,6 +131,10 @@
             background: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
             background-size: 240%;
             transition: all .3s ease-out;
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
         }
 
         &:hover, &:active {

@@ -4,6 +4,10 @@
 
 .u-margin-bottom--l {
     margin-bottom: 10rem;
+    @include respond(tab-port) {
+        margin-bottom: 4rem;
+
+    }
 }
 
 .u-margin-bottom--m {
