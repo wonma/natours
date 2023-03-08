@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="./assets/styles/style.scss">
     <title>Natour</title>
-<link href="styles.f6134acc7b007a6547ca.css" rel="stylesheet"></head>
+<link href="styles.72f3c3afa800af429608.css" rel="stylesheet"></head>
 <body>
+    <div class="navigation">
+        <input id="navi-toggle" type="checkbox" class="navigation__checkbox" />
+        
+        <div class="navigation__toggle-wrapper">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+        </div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <div class="logo">
@@ -85,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--tours">
+        <section class="section section--tours" id="section-tours">
             <h2 class="heading-secondary u-center-text u-margin-bottom--l">Most popular tours</h2>
             <div class="row">
                 <div class="col-1-of-3">
@@ -111,7 +131,7 @@
                                     <p class="flip-card__price-only">Only</p>
                                     <p class="flip-card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#section-popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +159,7 @@
                                     <p class="flip-card__price-only">Only</p>
                                     <p class="flip-card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#section-popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +187,7 @@
                                     <p class="flip-card__price-only">Only</p>
                                     <p class="flip-card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now!</a>
+                                <a href="#section-popup" class="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
@@ -177,6 +197,105 @@
                 <a href="#" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
+        <section class="section section--reviews">
+            <div class="bg-video">
+                <video autoplay muted loop class="bg-video__content">
+                    <source src="./assets/images/video.mp4" type="video/mp4" />
+                    <source src="./assets/images/video.webm" type="video/webm" />
+                    <p>The background is the video of the sea shore.</p>
+                </video>
+            </div>
+            <h2 class="heading-secondary u-center-text u-margin-bottom--l">We make people genuinely happy.</h2>
+            <div class="review">
+                <figure class="review__img-wrapper">
+                    <picture class="review__img-box">
+                        <img src="./assets/images/nat-8.jpg" alt="Review 1" class="review__img">
+                    </picture>
+                    <figcaption class="review__caption">Mary Smith</figcaption>
+                </figure>
+                    <h3 class="heading-tertiary">I had the best week ever with my family</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad consecteturctetur, Lorem ipsum dolor sit ametctetur, , Lorem ipsum dolor sit ametctetur, L, Lorem ipsum dolor sit ametctetur, LLorem ipsum dolor sit amet qui ullam? Ipsum enim corporis provident, odit exercitationem doloremque architecto impedit nulla vero quam dolorum facere, nemo minima accusamus! Autem!</p>
+            </div>
+            <div class="review">
+                <figure class="review__img-wrapper">
+                    <picture class="review__img-box">
+                        <img src="./assets/images/nat-9.jpg" alt="Review 2" class="review__img">
+                    </picture>
+                    <figcaption class="review__caption">Jack Wilson</figcaption>
+                </figure>
+                <h3 class="heading-tertiary">I had the best week ever with my family</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet ctetur, Lorem ipsum dolor sit ametctetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad consectetur qui ulla, Lorem ipsum dolor sit ametctetur, L, Lorem ipsum dolor sit ametctetur, Lm? Ipsum enim corporis provident, odit exercitationem doloremque architecto impedit nulla vero quam dolorum facere, nemo minima accusamus! Autem!</p>
+            </div>
+            <div class="u-center-text">
+                <a href="#" class="btn-text">Read All Stories &rarr;</a>
+            </div>
+        </section>
+        <section class="section section--form">
+            <div class="trapezoid">
+                <form class="form">
+                    <h2 class="heading-secondary u-margin-bottom--m">Start Booking Now</h2>
+                    <div class="form__group form__group--text">
+                        <input type="text" id="full-name" class="form__input--text" placeholder="Full name" name="full-name" minlength="2" maxlength="15"/>
+                        <label for="full-name" class="form__label form__label--text">Full Name</label>
+                    </div>
+                    <div class="form__group form__group--text">
+                        <input type="email" id="email" class="form__input--text" name="email" placeholder="Email address"/>
+                        <label for="email" class="form__label form__label--text">Email address</label>
+                    </div>
+                    <div class="form__group form__group--radio">
+                        <input type="radio" id="s-tour-group" class="form__input--radio" name="group-type"/>
+                        <label for="s-tour-group" class="form__label form__label--radio">Small tour group</label>
+                        <input type="radio" id="l-tour-group" class="form__input--radio" name="group-type"/>
+                        <label for="l-tour-group" class="form__label form__label--radio">Large tour group</label>
+                    </div>
+                    <button class="btn btn--green" type="submit">Next Step &rarr;</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <figure class="footer__logo-box">
+                <piture class="footer__logo">
+                    <img src="./assets/images/logo-green-1x.png" alt="Natours Logo" class="footer__logo-img">
+                </piture>
+            </figure>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Company</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact Us</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Careers</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="section-popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <picture class="popup__img-box">
+                        <img src="./assets/images/nat-8.jpg" alt="Woman rowing" class="popup__img">
+                    </picture>
+                    <picture class="popup__img-box">
+                        <img src="./assets/images/nat-9.jpg" alt="Man on the top of Mountain" class="popup__img">
+                    </picture>
+                    <a href="#section-tours" class="popup__close">x</a>
+                </div>
+                <div class="popup__right">
+                    <h2 class="heading-secondary">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom--s">Important - Please read these terms before booking</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.</p>
+                    <button class="btn btn--green">Book Now</button>
+                </div>
+            </div>
+        </div>
     </main>
-<script defer src="main.f6134acc7b007a6547ca.js"></script></body>
+<script defer src="main.72f3c3afa800af429608.js"></script></body>
 </html>
