@@ -8,6 +8,10 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
+  @supports (backdrop-filter:blur(0)) {
+    background-color: rgba($color-black, .3);
+    backdrop-filter:blur(10px);
+  }
 
   &__content {
     display: flex;
@@ -17,14 +21,7 @@
     min-height: 80vh;
     transform: translate(-50%, -50%) scale(0.25);
     opacity: 0;
-<<<<<<< HEAD
     transition: all .3s;
-    @supports (backdrop-filter:blur(0)) {
-        background-color: rgba($color-black, .3);
-
-        backdrop-filter:blur(10px);
-    }
-=======
     background-color: $color-white;
     border-radius: 3px;
     transition: all 0.5s ease-out 0.2s;
@@ -32,7 +29,6 @@
       flex-direction: column;
     }
   }
->>>>>>> 53507e3f3ee3e8643c1558546d8359b1aacf95bd
 
   &__left {
     position: relative;
