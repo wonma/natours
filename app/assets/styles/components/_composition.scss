@@ -1,13 +1,15 @@
-.composition {
+.composition { // <figure>
     position: relative;
 
-    &__img-box {
+    &__img {
         position: absolute;
         max-width: 55%;
         border-radius: 3px;
         overflow: hidden;
         box-shadow: $box-shadow-light;
-
+        width: 100%;
+        display: block;
+        
         @include respond(tab-port) {
             position: relative;
             float: left;
@@ -41,11 +43,7 @@
                 left: -2rem;
             }
         }        
-    }
-
-    &__img {
-        width: 100%;
-        display: block;
+        
     }
 
 }

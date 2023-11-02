@@ -59,17 +59,20 @@
                     <a href="#" class="btn-text">Learn More &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="composition">
-                        <figure class="composition__img-box composition__img-box--1">
-                            <img src="./assets/images/nat-1-large.jpg" alt="Nature 1" class="composition__img">
-                        </figure>
-                        <figure class="composition__img-box composition__img-box--2">
-                            <img src="./assets/images/nat-2-large.jpg" alt="Nature 2" class="composition__img">
-                        </figure>
-                        <figure class="composition__img-box composition__img-box--3">
-                            <img src="./assets/images/nat-3-large.jpg" alt="Nature 3" class="composition__img">
-                        </figure>
-                    </div>
+                    <figure class="composition">
+                        <img
+                            src="./assets/images/nat-1-large.jpg"
+                            srcset="
+                                ./assets/images/nat-1-large.jpg 1000w, 
+                                ./assets/images/nat-1.jpg 300w" 
+                            sizes="(max-width:900px) 27vw, 
+                                (max-width:1200px) 20vw, 
+                                (min-width:1200px) 302px" 
+                            alt="Rocky mountains and lake" 
+                            class="composition__img composition__img--1">
+                        <img src="./assets/images/nat-2-large.jpg" alt="Bike tour spot with hills" class="composition__img composition__img--2">
+                        <img src="./assets/images/nat-3-large.jpg" alt="Top of the mountain during sunset" class="composition__img composition__img--3">
+                    </figure>
                 </div>
             </div>      
         </section>
