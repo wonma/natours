@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="./assets/styles/style.scss">
+    <!-- <link rel="stylesheet" href="./assets/styles/style.scss"> -->
     <title>Natour</title>
-<link href="styles.72f3c3afa800af429608.css" rel="stylesheet"></head>
+<link href="styles.77850168b98cf3be9f23.css" rel="stylesheet"></head>
 <body>
     <div class="navigation">
         <input id="navi-toggle" type="checkbox" class="navigation__checkbox" />
@@ -59,17 +59,37 @@
                     <a href="#" class="btn-text">Learn More &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="composition">
-                        <figure class="composition__img-box composition__img-box--1">
-                            <img src="./assets/images/nat-1-large.jpg" alt="Nature 1" class="composition__img">
-                        </figure>
-                        <figure class="composition__img-box composition__img-box--2">
-                            <img src="./assets/images/nat-2-large.jpg" alt="Nature 2" class="composition__img">
-                        </figure>
-                        <figure class="composition__img-box composition__img-box--3">
-                            <img src="./assets/images/nat-3-large.jpg" alt="Nature 3" class="composition__img">
-                        </figure>
-                    </div>
+                    <figure class="composition">
+                        <img
+                            srcset="
+                                ./assets/images/nat-1.jpg 300w,
+                                ./assets/images/nat-1-large.jpg 1000w, 
+                            " 
+                            sizes="(max-width:900px) calc((100vw - 12rem)/3), 
+                                (max-width:1199px) calc(((100vw - 22rem)/2)*0.55), 
+                                302.5px"
+                            src="./assets/images/nat-1-large.jpg"
+                            alt="Rocky mountains and lake" 
+                            class="composition__img composition__img--1">
+                        <img
+                            srcset="
+                            ./assets/images/nat-2.jpg 300w,
+                            ./assets/images/nat-2-large.jpg 1000w, 
+                            " 
+                            sizes="(max-width:900px) calc((100vw - 12rem)/3), 
+                                (max-width:1199px) calc(((100vw - 22rem)/2)*0.55), 
+                                302.5px"
+                        src="./assets/images/nat-2-large.jpg" alt="Bike tour spot with hills" class="composition__img composition__img--2">
+                        <img 
+                            srcset="
+                            ./assets/images/nat-3.jpg 300w,
+                            ./assets/images/nat-3-large.jpg 1000w, 
+                            " 
+                            sizes="(max-width:900px) calc((100vw - 12rem)/3), 
+                                (max-width:1199px) calc(((100vw - 22rem)/2)*0.55), 
+                                302.5px"
+                        src="./assets/images/nat-3-large.jpg" alt="Top of the mountain during sunset" class="composition__img composition__img--3">
+                    </figure>
                 </div>
             </div>      
         </section>
@@ -279,23 +299,26 @@
         </footer>
         <div class="popup" id="section-popup">
             <div class="popup__content">
+            
                 <div class="popup__left">
-                    <picture class="popup__img-box">
+                    <picture class="popup__img-box popup__img-box--1">
                         <img src="./assets/images/nat-8.jpg" alt="Woman rowing" class="popup__img">
                     </picture>
-                    <picture class="popup__img-box">
+                    <picture class="popup__img-box popup__img-box--2">
                         <img src="./assets/images/nat-9.jpg" alt="Man on the top of Mountain" class="popup__img">
                     </picture>
-                    <a href="#section-tours" class="popup__close">x</a>
                 </div>
+
                 <div class="popup__right">
                     <h2 class="heading-secondary">Start Booking Now</h2>
                     <h3 class="heading-tertiary u-margin-bottom--s">Important - Please read these terms before booking</h3>
                     <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.</p>
                     <button class="btn btn--green">Book Now</button>
                 </div>
+                <a href="#section-tours" class="popup__close">x</a>
+
             </div>
         </div>
     </main>
-<script defer src="main.72f3c3afa800af429608.js"></script></body>
+<script defer src="main.77850168b98cf3be9f23.js"></script></body>
 </html>
