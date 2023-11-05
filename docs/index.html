@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <title>Natour</title>
-<link href="styles.895999344482146913d4.css" rel="stylesheet"></head>
+<link href="styles.086223c397fd6d4a180a.css" rel="stylesheet"></head>
 <body>
     <div class="navigation">
         <input id="navi-toggle" type="checkbox" class="navigation__checkbox" />
@@ -273,9 +273,15 @@
         </section>
         <footer class="footer">
             <figure class="footer__logo-box">
-                <piture class="footer__logo">
-                    <img src="./assets/images/logo-green-1x.png" alt="Natours Logo" class="footer__logo-img">
-                </piture>
+                <picture class="footer__logo">
+                    <source srcset="./assets/images/logo-green-small-1x.png 1x,
+                                    ./assets/images/logo-green-small-2x.png 2x
+                            " media="(max-width: 37.5em)">
+                    <img srcset="./assets/images/logo-green-1x.png 1x, ./assets/images/logo-green-2x.png 2x" 
+                        alt="Natours Logo" 
+                        class="footer__logo-img" 
+                        src="./assets/images/logo-green-1x.png" >
+                </picture>
             </figure>
             <div class="row">
                 <div class="col-1-of-2">
@@ -319,5 +325,5 @@
             </div>
         </div>
     </main>
-<script defer src="main.895999344482146913d4.js"></script></body>
+<script defer src="main.086223c397fd6d4a180a.js"></script></body>
 </html>
