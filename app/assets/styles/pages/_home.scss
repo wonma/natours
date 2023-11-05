@@ -17,17 +17,29 @@
     &--features {
         background: 
             linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
-            url('./assets/images/nat-1-large.jpg');
-
+            url('./assets/images/nat-7.jpg');
         background-size: cover;
         background-position: center;
-        transform: skewY(-7deg);
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 
-        & > * {
-            transform: skewY(7deg);
-            margin-bottom: 0;
+        @include respond(tab-land) {
+            background: 
+            linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
+            url('./assets/images/nat-7-small.jpg');
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            background-size: cover;
+
+        }
+
+        @include respond(tab-port) {
+            background: 
+            linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
+            url('./assets/images/nat-7-port.jpg');
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+            background-size: cover;
         }
     }
+
 
     &--tours {
         background-color: $color-grey-light-1;
