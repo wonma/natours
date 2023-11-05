@@ -131,7 +131,18 @@
                     <div class="flip-card">
                         <div class="flip-card__side flip-card__side--front">
                             <figure class="flip-card__img-box flip-card__img-box--1">
-                                <img src="./assets/images/nat-4.jpg" alt="Tourist spot 1" class="flip-card__img"/>
+                                <img 
+                                    srcset="
+                                    ./assets/images/nat-4-small.jpg 700w,
+                                    ./assets/images/nat-4.jpg 2000w" 
+                                    sizes="
+                                        (max-width: 1336px) calc((100vw - 26rem)/3),
+                                        (max-width: 900px) calc(100vw - 12rem),
+                                        (max-width: 600px) calc(100vw - 6rem),
+                                        353px"
+                                    src="./assets/images/nat-4.jpg" 
+                                    alt="Tourist spot 1" 
+                                    class="flip-card__img"/>
                             </figure>
                             <h3 class="flip-card__heading">
                                 <span class="flip-card__heading-span flip-card__heading-span--1">The Sea Explorer</span>
@@ -159,7 +170,16 @@
                     <div class="flip-card">
                         <div class="flip-card__side flip-card__side--front">
                             <figure class="flip-card__img-box flip-card__img-box--2">
-                                <img src="./assets/images/nat-5.jpg" alt="Tourist spot 2" class="flip-card__img"/>
+                                <img 
+                                srcset="
+                                ./assets/images/nat-5-small.jpg 700w,
+                                ./assets/images/nat-5.jpg 2000w" 
+                                sizes="
+                                    (max-width: 1336px) calc((100vw - 26rem)/3),
+                                    (max-width: 900px) calc(100vw - 12rem),
+                                    (max-width: 600px) calc(100vw - 6rem),
+                                    353px"
+                                src="./assets/images/nat-5.jpg" alt="Tourist spot 2" class="flip-card__img"/>
                             </figure>
                             <h3 class="flip-card__heading">
                                 <span class="flip-card__heading-span flip-card__heading-span--2">The Forest Hiker</span>
@@ -187,7 +207,17 @@
                     <div class="flip-card">
                         <div class="flip-card__side flip-card__side--front">
                             <figure class="flip-card__img-box flip-card__img-box--3">
-                                <img src="./assets/images/nat-6.jpg" alt="Tourist spot 3" class="flip-card__img"/>
+                                <img 
+                                srcset="
+                                ./assets/images/nat-6-small.jpg 700w,
+                                ./assets/images/nat-6.jpg 2000w" 
+                                sizes="
+                                    (max-width: 1336px) calc((100vw - 26rem)/3),
+                                    (max-width: 900px) calc(100vw - 12rem),
+                                    (max-width: 600px) calc(100vw - 6rem),
+                                    353px"
+                                src="./assets/images/nat-6.jpg" 
+                                alt="Tourist spot 3" class="flip-card__img"/>
                             </figure>
                             <h3 class="flip-card__heading">
                                 <span class="flip-card__heading-span flip-card__heading-span--3">The Snow Adventurer</span>

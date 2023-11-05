@@ -1,8 +1,12 @@
 .section {
-    padding: 17rem 0;
+    padding: 20rem 6rem;
 
     @include respond(tab-land) {
-        padding: 20rem 6rem;
+        padding: 16rem 6rem;
+    }
+
+    @include respond(phone) {
+        padding: 16rem 3rem;
     }
 
     &--about {
