@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <title>Natour</title>
-<link href="styles.2dad635d5b4d5cd96a29.css" rel="stylesheet"></head>
+<link href="styles.27c1968a1c41c2dbac47.css" rel="stylesheet"></head>
 <body>
     <div class="navigation">
         <input id="navi-toggle" type="checkbox" class="navigation__checkbox" />
@@ -258,7 +258,16 @@
             <div class="review">
                 <figure class="review__img-wrapper">
                     <picture class="review__img-box">
-                        <img src="./assets/images/nat-8.jpg" alt="Review 1" class="review__img">
+                        <img srcset="
+                                    ./assets/images/nat-8-xs.jpg 350w,
+                                    ./assets/images/nat-8-small.jpg 700w
+                                    " 
+                            sizes="(max-width: 900px) 160px,
+                                    (max-width: 1200) 200px,
+                                    240px"
+                        src="./assets/images/nat-8-small.jpg" 
+                        alt="Review 1" 
+                        class="review__img">
                     </picture>
                     <figcaption class="review__caption">Mary Smith</figcaption>
                 </figure>
@@ -268,8 +277,16 @@
             <div class="review">
                 <figure class="review__img-wrapper">
                     <picture class="review__img-box">
-                        <img src="./assets/images/nat-9.jpg" alt="Review 2" class="review__img">
-                    </picture>
+                        <img srcset="
+                                    ./assets/images/nat-9-xs.jpg 350w,
+                                    ./assets/images/nat-9-small.jpg 700w
+                                    " 
+                            sizes="(max-width: 900px) 160px,
+                                    (max-width: 1200) 200px,
+                                    240px"
+                        src="./assets/images/nat-9-small.jpg" 
+                        alt="Review 1" 
+                        class="review__img">                    </picture>
                     <figcaption class="review__caption">Jack Wilson</figcaption>
                 </figure>
                 <h3 class="heading-tertiary">I had the best week ever with my family</h3>
@@ -355,5 +372,5 @@
             </div>
         </div>
     </main>
-<script defer src="main.2dad635d5b4d5cd96a29.js"></script></body>
+<script defer src="main.27c1968a1c41c2dbac47.js"></script></body>
 </html>
