@@ -17,7 +17,7 @@ const config = {
     module: {
         rules: [
             { // 순서 중요함. 환경별 코드에서 rules[0]으로 css테스트룰을 reference하고 있음.
-                test: /\.(s(a|c)ss)$/,
+                test: /\.s(a|c)ss$/,
                 use: [
                     {
                         loader: 'css-loader',
