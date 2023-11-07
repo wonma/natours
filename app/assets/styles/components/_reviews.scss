@@ -14,6 +14,7 @@
 
     @include respond(phone) {
         width: 100%;
+        padding: 4rem;
     }
 
     @include respond(tab-land) {
@@ -37,18 +38,31 @@
         width: 20rem;
         height: 20rem;
         overflow: hidden;
-        float: left;
         transform: translateX(-1rem) skewX(12deg);
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        border-radius: 0;
+        float: left;
 
-        shape-outside: circle(35% at 65% 51%);
-        -webkit-shape-outside: circle(35% at 65% 51%);
-        clip-path: circle(39%);
-        -webkit-clip-path: circle(39%);
+
+        @supports (clip-path: circle(0)) and (shape-outside: circle(0)) {
+            border-radius: 0;
+            shape-outside: circle(36% at 67% 46%);
+            -webkit-shape-outside: circle(36% at 67% 46%);
+            clip-path: circle(39%);
+            -webkit-clip-path: circle(39%);
+            margin-top: -2rem;
+        }
 
         @include respond(tab-land) {
             transform: translateX(0) skewX(0);
-            left: -2rem;
         }
+
+        @include respond(phone) {
+            float: none;
+            margin: 0 auto;
+        }
+    
     }
 
     &__img {
