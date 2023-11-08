@@ -9,10 +9,9 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-light-1:#f7f7f7;
+$color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 $color-grey-light-3: #d8d8d8;
-
 
 $color-grey-dark-1: #999;
 $color-grey-dark-2: #777;
@@ -21,8 +20,9 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
-// BOX SHADOW 
-$box-shadow-light: 0 1.5rem 4rem rgba($color-black, .4);
+// BOX SHADOW
+$box-shadow-light: 0 1.5rem 4rem rgba($color-black, 0.4);
+$box-shadow-lighter: 0 1.7rem 5rem rgba($color-black, 0.3);
 
 // FONT
 $default-font-size: 1.6rem;

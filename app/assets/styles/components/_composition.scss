@@ -1,49 +1,60 @@
-.composition { // <figure>
-    position: relative;
+.composition {
+  // <figure>
+  position: relative;
 
-    &__img {
-        position: absolute;
-        max-width: 55%;
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: $box-shadow-light;
-        width: 100%;
-        display: block;
-        
-        @include respond(tab-port) {
-            position: relative;
-            float: left;
-            max-width: 33.33%;
-        }
+  &__img {
+    position: absolute;
+    max-width: 55%;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: $box-shadow-light;
+    width: 100%;
+    display: block;
+    outline-offset: 2rem;
+    transition: all 0.3s;
 
-        &--1 {
-            top: -2rem;
-            left: 0;
-            @include respond(tab-port) {
-                top: 0rem;
-                left: 2rem;
-            }
-        }
-
-        &--2 {
-            top: 2rem;
-            right: 0;
-            @include respond(tab-port) {
-                top: -2rem;
-                left: 0;
-                z-index: 3;
-            }
-        }
-
-        &--3 {
-            top: 10rem;
-            left: 20%;
-            @include respond(tab-port) {
-                top: 0rem;
-                left: -2rem;
-            }
-        }        
-        
+    @include respond(tab-port) {
+      position: relative;
+      float: left;
+      max-width: 33.33%;
     }
 
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.2);
+      box-shadow: $box-shadow-lighter;
+    }
+
+    &--1 {
+      top: -2rem;
+      left: 0;
+      @include respond(tab-port) {
+        top: 0rem;
+        left: 2rem;
+      }
+    }
+
+    &--2 {
+      top: 2rem;
+      right: 0;
+      @include respond(tab-port) {
+        top: -2rem;
+        left: 0;
+        z-index: 3;
+      }
+    }
+
+    &--3 {
+      top: 10rem;
+      left: 20%;
+      @include respond(tab-port) {
+        top: 0rem;
+        left: -2rem;
+      }
+    }
+  }
+
+  &:hover &__img:not(:hover) {
+    transform: scale(0.9);
+  }
 }
