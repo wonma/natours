@@ -44,25 +44,19 @@
     width: calc(((100% - #{$grid-gutter-hozirontal} * 3) / 4) * 3);
 }
 
-// GUTTER HORIZONTAL
-// div[class|="col"]:not(:last-child) {
-//     margin-right: $grid-gutter-hozirontal;
-  
-// } 이것은 두 케이스를 다루기 때문에 쓰지 않는 것이 나음. col도 잡고 col-xxxxx도 잡음. 
-
 div[class^="col-"] {
 
     &:not(:last-child) {
         margin-right: $grid-gutter-hozirontal;
 
-        @include respond(tab-port) {
+        @include respond(tab-port) { // Columns stack vertically bofore the viewport width is tab-port.
             margin-right: 0;
             margin-bottom: 5rem;
         }
     }
 
-    @include respond(tab-port) {
+    @include respond(tab-port) { // All columns takes 100% of the main container's width.
         width: 100%;
     }
-}
+} 
 
