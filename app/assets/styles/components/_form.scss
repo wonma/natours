@@ -1,112 +1,118 @@
 .form {
-    width: 50%;
+  width: 75%;
+
+  @include respond(tab-land) {
+    width: 60%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  // GENERAL FOR EACH FIELD
+  &__group {
+    width: 80%;
     @include respond(tab-land) {
-        width: 100%;
+      width: 100%;
     }
+  }
 
-    // GENERAL
-    &__group {
-        width: 80%;
-        @include respond(tab-land) {
-            width: 100%;
-        }
-    }
+  &__label {
+    font-size: 1.8rem;
+    color: $color-grey-dark-3;
+  }
 
-    &__label {
-        font-size: 1.8rem;
-        color: $color-grey-dark-3;
-    }
+  // TEXT INPUT
+  &__group--text {
+    position: relative;
+    margin-bottom: 4rem;
+  }
 
-    // TEXT INPUT
-    &__group--text {
-        position: relative;
-        margin-bottom: 4rem;
-    }
+  &__label--text {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: 600;
+    top: 30%;
+    left: 2rem;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+  }
 
-    &__label--text {
-        position: absolute;
-        font-size: 1.4rem;
-        font-weight: 600;
-        top: 30%;
-        left: 2rem;
-        transition: all .3s ease-out;
-        visibility: hidden;
-        opacity: 0;
-    }
+  &__input--text:not(:placeholder-shown) + &__label--text {
+    transform: translateY(4.5rem);
+    opacity: 1;
+    visibility: visible;
+  }
 
-    &__input--text:not(:placeholder-shown) + &__label--text{
-        transform: translateY(4.5rem);
-        opacity: 1;
-        visibility: visible;
-    }
+  &__input--text {
+    border-radius: 3px;
+    width: 100%;
+    padding: 2rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+  }
 
-    &__input--text {
-        border-radius: 3px;
-        width: 100%;
-        padding: 2rem;
-        border: 0;
-        border-bottom: 2px solid transparent;
-    }
+  &__input--text:focus,
+  &__input--text:invalid {
+    outline: none;
+    border-bottom: 2px solid $color-secondary-dark;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+  }
 
-    &__input--text:focus, &__input--text:invalid {
-        outline: none;
-        border-bottom: 2px solid $color-secondary-dark;
-        box-shadow: 0 1rem 2rem rgba(#000, .1);
-    }
+  // RADIO INPUT
+  &__group--radio {
+    margin-bottom: 3rem;
+  }
 
-    // RADIO INPUT
-    &__group--radio {
-        margin-bottom: 3rem;
-    }
+  &__label--radio {
+    position: relative;
+    left: 8px;
+    margin-right: 2rem;
 
-    &__label--radio {
-        position: relative;
-        left: 8px;
-        margin-right: 2rem;
-        
-        @include respond(phone) {
-            display: block;
-            width: 100%;
-            left: 3rem;
-            &:not(:last-child) {
-                margin-bottom: -1rem;
-            }
-        }
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+      left: 3rem;
+      &:not(:last-child) {
+        margin-bottom: -1rem;
+      }
     }
+  }
 
-    &__input--radio {
-        visibility: hidden;
-    }
+  &__input--radio {
+    visibility: hidden;
+  }
 
-    &__input--radio:not(:checked) + &__label--radio::before{
-        opacity: 0;
-    }
+  &__input--radio:not(:checked) + &__label--radio::before {
+    opacity: 0;
+  }
 
-    &__input--radio:checked + &__label--radio::before{
-        opacity: 1;
-    }
+  &__input--radio:checked + &__label--radio::before {
+    opacity: 1;
+  }
 
-    &__label--radio::before {
-        position: absolute;
-        content: "";
-        top: 8px;
-        left: -20px;
-        width: 10px;
-        height: 10px;
-        background-color: $color-primary;
-        border-radius: 50%;
-        transition: all .2s ease-out;
-    }
+  &__label--radio::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+  }
 
-    &__label--radio::after {
-        position: absolute;
-        top: 3px;
-        left: -25px;
-        content: "";
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        border-radius: 50%;
-        border: 3px solid $color-primary;
-    }
+  &__label--radio::after {
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid $color-primary;
+  }
 }

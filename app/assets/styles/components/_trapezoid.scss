@@ -1,15 +1,29 @@
 .trapezoid {
-    width: 70%;
-    padding: 7rem;
-    margin: 0 auto;
-    background: linear-gradient(110deg, rgba(#fff, .8) 0%, rgba(#fff, .8) 60%, transparent 60%),
-        url("./assets/images/nat-10.jpg");
-    background-position: top center;
+  width: 70%;
+  padding: 7rem;
+  margin: 0 auto;
+  background: linear-gradient(
+      110deg,
+      rgba(#fff, 0.8) 0%,
+      rgba(#fff, 0.8) 70%,
+      transparent 70%
+    ),
+    url('./assets/images/nat-10.jpg');
+  background-position: top center;
 
-    @include respond(tab-land) {
-        width: 90%;
-        background: linear-gradient(110deg, rgba(#fff, .8) 0%, rgba(#fff, .8) 100%),
-        url("./assets/images/nat-10-small.jpg");
-        background-position: top center;
-    }
+  @include respond(tab-land) {
+    width: 90%;
+    background: linear-gradient(
+        110deg,
+        rgba(#fff, 0.8) 0%,
+        rgba(#fff, 0.8) 100%
+      ),
+      url('./assets/images/nat-10-small.jpg');
+    background-position: top center;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+  }
 }
