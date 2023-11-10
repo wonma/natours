@@ -77,7 +77,6 @@
     // FUNCTIONALITY
     &__checkbox:checked + &__toggle-wrapper > &__background {
         transform: scale(100);
-        z-index: 1010;
     }
 
     &__checkbox:checked + &__toggle-wrapper &__icon {
@@ -153,4 +152,8 @@
         visibility: visible;
         transform: translateX(-50%) translateY(-50%);
     } 
+
+    &__link:active &__nav{
+        transform: scale(1);
+    }
 }
